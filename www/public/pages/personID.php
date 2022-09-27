@@ -9,18 +9,20 @@
 <body>
     <header><h1>person account</h1></header>
     <main><article>
+        <form action="personLog.php" method="post"> 
         <p>insert your forname</p>
         <input type="text" name="forName" >
         <br>
         <p>insert your aftername</p>
         <input type="text" name="afterName" >
         <br>
-        <p>insert age</p>
-        <input type="number" name="age">
+        <p>select username</p>
+        <input type="text" name="userName">
         <br>
         <p>password</p>
         <input type="text" name="pass">
-
+        <input type="submit" name="enter">
+        </form>
     </article></main>
     <footer><h3>contact: abc@mail.com <br>like and support </h3></footer>
     
