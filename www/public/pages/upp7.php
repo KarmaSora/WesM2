@@ -1,13 +1,44 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person account</title>
+</head>
+<body>
+    <header><h1>person account</h1></header>
+    <main><article>
+        <form method="post"> 
+        <p>insert your forname</p>
+        <input type="text" name="forName" >
+        <br>
+        <p>insert your aftername</p>
+        <input type="text" name="afterName" >
+        <br>
+        <p>select username</p>
+        <input type="text" name="userName">
+        <br>
+        <p>password</p>
+        <input type="text" name="pass">
+        <input type="submit" name="enter">
+        </form>
+    </article></main>
+    <footer><h3>contact: abc@mail.com <br>like and support </h3></footer>
+
+
 <?php
    // För att förenkla användandet av mb_ funktioner
    mb_internal_encoding("UTF-8");     
+
 
 
     if(isset($_POST['forName'])){ // Kontrollerar att data kommer 
         $forname = $_POST['forName'];
 
         if(!mb_check_encoding($forname)){
-            header('Location: personID.php');
+            header('Location: upp7.php');
         }
         
         $forname = htmlspecialchars($forname);
@@ -22,7 +53,7 @@
         $aftername = $_POST['afterName'];
 
         if(!mb_check_encoding($aftername)){
-            header('Location: personID.php');
+            header('Location: upp7.php');
         }
         
         $aftername = htmlspecialchars($aftername);
@@ -37,7 +68,7 @@
         $pass = $_POST['pass'];
 
         if(!mb_check_encoding($pass)){
-            header('Location: personID.php');
+            header('Location: upp7.php');
         }
         
         $pass = htmlspecialchars($pass);
@@ -54,7 +85,7 @@
         $userName = $_POST['userName'];
 
         if(!mb_check_encoding($userName)){
-            header('Location: personID.php');
+            header('Location: upp7.php');
         }
         
         $userName = htmlspecialchars($userName);
@@ -73,3 +104,5 @@ echo("<p> name: $forname $aftername username: $userName password: $pass</p>");
 
 
 ?>
+</body>
+</html>
