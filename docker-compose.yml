@@ -18,8 +18,9 @@ services:
     build: ./docker/php
     container_name: php
     volumes:
-      - ./www/public:/var/www/public
+      - ./www:/var/www
       - ./config/php/php.ini:/usr/local/etc/php/php.ini
+    working_dir: /var/www
 
   mariadb:
     image: mariadb:latest

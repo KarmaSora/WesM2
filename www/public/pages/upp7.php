@@ -48,6 +48,8 @@
         $forname = stripslashes($forname);
 
         header('Content-Type: text/html; charset=utf-8');
+        echo("<h1> Wellcome $forname </h1>");
+
     }
     if(isset($_POST['afterName'])){ // Kontrollerar att data kommer 
         $aftername = $_POST['afterName'];
@@ -63,6 +65,8 @@
         $aftername = stripslashes($aftername);
 
         header('Content-Type: text/html; charset=utf-8');
+        echo("<h1> $aftername</h1>");
+
     }
     if(isset($_POST['pass'])){ // Kontrollerar att data kommer 
         $pass = $_POST['pass'];
@@ -78,6 +82,7 @@
         $pass = stripslashes($pass);
 
         header('Content-Type: text/html; charset=utf-8');
+        echo"password: $pass";
     }
     
    
@@ -95,12 +100,11 @@
         $userName = stripslashes($userName);
 
         header('Content-Type: text/html; charset=utf-8');
+        echo" username: $userName ";
     }
   // $userName = $_POST['userName'];  // kan testa med och utan för att se om koden if satserna fungerar.
 
-echo("<h1> Wellcome $forname $aftername</h1>");
 echo("<h1> check personal information</h1>");
-echo("<p> name: $forname $aftername username: $userName password: $pass</p>");
 
 
 ?>
