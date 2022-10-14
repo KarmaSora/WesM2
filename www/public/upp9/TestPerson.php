@@ -9,6 +9,10 @@
     include("Person.php");
     
     $person = new Person("Henrik", "Bygren", "ByHe","12345");
+   // $person = new Person("Sheldon", "Cooper", "ShCo","1236"); //test
+    // $person = new Person("Robin", "carlos", "RoCa","42134");  //test
+
+
 
     header('Content-Type: text/html; charset=utf-8');
     
