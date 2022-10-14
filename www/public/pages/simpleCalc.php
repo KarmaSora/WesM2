@@ -1,5 +1,5 @@
 <?php
-    include ('pages/math.php');
+    include ('math.php');
 
     $sumAns =sum( 4, 4);
     $divAns = divide( 4, 4);
