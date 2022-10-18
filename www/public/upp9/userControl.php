@@ -6,7 +6,7 @@ if(!isset($_POST['user'])){
     header("location: login.html");
     exit;
 }
-include('userArray.php');
+include('../../userArray.php');
 print("test av code");
 
 if(isset($_POST['user'])){ // Kontrollerar att data kommer 
