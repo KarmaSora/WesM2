@@ -8,7 +8,7 @@ $property["name"] = $newName;
 $property["user"] = $newUser;
 $property["pwd"] = $newPwd;
 
-
+header('personRead');
 
 
 

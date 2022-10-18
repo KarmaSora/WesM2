@@ -14,6 +14,9 @@
     $personArray[] = new Person("Henrik", "Bygren", "ByHe","2222223");
     $personArray[] = new Person("Eva", "Jansson", "JaEv","33333343");
     $personArray[] = new Person("Karam", "Matar", "KaMa","123321");
+    $personArray[] = new Person("Ra", "Ra", "Ra","Ra");
+
+    $personArray[] = new Person($firstName, $surName, $userName, $passWord);
 
 
     $file = "person.dat";

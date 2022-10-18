@@ -54,3 +54,4 @@ for($i=0; $i<count($userArray); $i++){
 header("location: login.html");
 
 ?>
+<!-- redirekta till personRead.php-->
