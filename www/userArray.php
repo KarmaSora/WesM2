@@ -23,6 +23,18 @@ $property["pwd"] = "L";
 
 $userArray[] = $property;
 
+$newUser =  $_POST['Username'];
+$newName = $_POST['name'];
+$newPwd = $_POST['pwd'];
+
+$property["name"] = $newName;
+$property["user"] = $newUser;
+$property["pwd"] = $newPwd;
+
+$userArray[] = $property;
+
+
+
 
 
 ?>
