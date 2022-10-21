@@ -14,6 +14,8 @@
       $personArray = unserialize(file_get_contents($file));
    }else{
       // Filen finns ej!! Kör om programmet “personWrite.php”
+      header('Location: personWrite.php');
+
    }
 
    header('Content-Type: text/html; charset=utf-8');

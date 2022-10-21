@@ -16,11 +16,23 @@
     $personArray[] = new Person("Karam", "Matar", "KaMa","123321");
     $personArray[] = new Person("Ra", "Ra", "Ra","Ra");
 
-    $personArray[] = new Person($firstName, $surName, $userName, $passWord);
+    $newFirstName = $_POST['firstName'];
+    $newAfterName = $_POST['afterName'];
+    $newUser =  $_POST['Username'];
+    $newPwd = $_POST['pwd'];
 
+   
+ 
 
     $file = "person.dat";
-    file_put_contents($file, serialize($personArray));
+    if(file_exists($file)){
+        $personArray = unserialize(file_get_contents($file));
+        
+        $personArray[] = new Person($newFirstName, $newAfterName, $newUser, $newPwd);
+        
+     }
+     file_put_contents($file, serialize($personArray));
+
 
 
     // Färdigt! Resten av koden gör enbart en utskrift av innehållet.
@@ -31,7 +43,12 @@
       echo "<p><strong>Användarnamn: </strong>" . $personArray[$i]->getUserName() . "</p>";
       echo "<p><strong>Lösenord: </strong>" . $personArray[$i]->getPassWord() . "</p>";
       echo "<hr>";
+
    }
+   
+
 ?>
+
+<a href="login.html">Go to login page!</a>
 </body>
 </html>
