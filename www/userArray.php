@@ -33,7 +33,15 @@ $property["afterName"] = $newAfterName;
 $property["Username"] = $newUser;
 $property["pwd"] = $newPwd;
 
-$userArray[] = $property;
+
+include(' Location: person.dat');
+
+
+$userArray[]['firsrtName'] = $file['newFirstName'];
+$userArray[]['name'] = $file['newFirstName'];
+
+
+
 
 
 ?>

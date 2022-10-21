@@ -9,13 +9,13 @@
 <?php
     include("Person.php");
     $personArray = array();
-
+/*
     $personArray[] = new Person("Kalle", "Nilsson", "NiKa","1234523");
     $personArray[] = new Person("Henrik", "Bygren", "ByHe","2222223");
     $personArray[] = new Person("Eva", "Jansson", "JaEv","33333343");
     $personArray[] = new Person("Karam", "Matar", "KaMa","123321");
     $personArray[] = new Person("Ra", "Ra", "Ra","Ra");
-
+*/
     $newFirstName = $_POST['firstName'];
     $newAfterName = $_POST['afterName'];
     $newUser =  $_POST['Username'];
