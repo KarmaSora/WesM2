@@ -13,6 +13,9 @@ if(!isset($_POST['user'])){
     $personArray = unserialize(file_get_contents($file));
 
 
+    $user = $_POST['user'];
+    $pwd = $_POST['pwd'];
+
 
 
 for($i=0; $i<count($personArray); $i++){
