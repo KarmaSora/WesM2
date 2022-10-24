@@ -13,7 +13,7 @@ if(!isset($_POST['user'])){
 }
 
 for($i=0; $i<count($personArray); $i++){
-    if($user == $personArray[$i]->getUserName() && $pwd == $personArrayy[$i]->getPassWord()){
+    if($user == $personArray[$i]->getUserName() && $pwd == $personArray[$i]->getPassWord()){
         header("location: userPage.php" . "?name=" . $personArray[$i]->getUserName());
         exit;
     }
